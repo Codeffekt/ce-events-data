@@ -1,0 +1,39 @@
+{
+  "name": "@codeffekt/ce-events-data",
+  "version": "1.1.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build-old": "tsc -p tsconfig.json --declaration",
+    "build": "rollup -c rollup.config.js"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "dist/**/*"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "Codeffekt",
+    "url": "https://codeffekt.com"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "peerDependencies": {
+    "@codeffekt/ce-core-data": "^1.1.0"
+  },
+  "devDependencies": {
+    "@codeffekt/ce-core-data": "^1.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "eslint": "^8.31.0",
+    "rollup": "^2.79.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.2.3"
+  }
+}
